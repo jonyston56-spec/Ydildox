@@ -1,11 +1,9 @@
 {
-  "name": "v-edge-internal-transport",
-  "version": "1.0.1",
-  "description": "Internal edge-route optimization for X-series protocols",
+  "name": "v-edge-internal",
+  "version": "1.0.0",
   "private": true,
-  "license": "UNLICENSED",
   "scripts": {
-    "build": "echo 'Optimization bypassed'"
+    "vc-install": "exit 0",
+    "build": "exit 0"
   }
 }
-
