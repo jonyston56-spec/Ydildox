@@ -2,15 +2,13 @@
   "version": 2,
   "routes": [
     {
-      "src": "/_health-check",
-      "status": 200,
-      "dest": "/api/index"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/api/index"
+      "src": "/(?<path>.*)",
+      "dest": "/api/index?path=$path",
+      "headers": {
+        "x-edge-optimized": "true"
+      }
     }
   ],
-  "cleanUrls": true
+  "cleanUrls": true,
+  "trailingSlash": false
 }
-
