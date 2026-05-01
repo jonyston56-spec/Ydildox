@@ -1,0 +1,11 @@
+{
+  "name": "v-edge-internal-transport",
+  "version": "1.0.1",
+  "description": "Internal edge-route optimization for X-series protocols",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "echo 'Optimization bypassed'"
+  }
+}
+
