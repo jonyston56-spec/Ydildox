@@ -1,14 +1,10 @@
 {
   "version": 2,
+  "outputDirectory": ".",
   "routes": [
     {
-      "src": "/(?<path>.*)",
-      "dest": "/api/index?path=$path",
-      "headers": {
-        "x-edge-optimized": "true"
-      }
+      "src": "/(.*)",
+      "dest": "/api/index"
     }
-  ],
-  "cleanUrls": true,
-  "trailingSlash": false
+  ]
 }
